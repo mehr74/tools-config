@@ -1,0 +1,12 @@
+{
+    "configurations": {
+        "launch": {
+            "adapter": "CodeLLDB",
+            "filetypes": [ "cpp" ],
+            "configuration": {
+                "request": "launch",
+                "program": "/Users/mehrshad/Projects/coding/src/contest/1608/C/C"
+            }
+        }
+    }
+}
