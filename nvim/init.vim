@@ -12,6 +12,8 @@ call plug#begin('~/.vim/plugged')
 "
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
+Plug 'junegunn/fzf', {'do': { -> fzf#install()}}
+Plug 'junegunn/fzf.vim'
 "Plug 'humiaozuzu/TabBar'
 "Plug 'majutsushi/tagbar'
 ""Plug 'mileszs/ack.vim'
@@ -265,6 +267,7 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+nnoremap <C-p> :GFiles<CR>
 
 source $HOME/.config/nvim/vimspector.vim
 
