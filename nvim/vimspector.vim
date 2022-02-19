@@ -5,3 +5,6 @@ nmap <leader>de :VimspectorEval
 nmap <leader>dw :VimspectorWatch
 nmap <leader>do :VimspectorShowOutput
 autocmd FileType java nmap <leader>dd :CocCommand java.debug.vimspector.start<CR>
+nmap <leader>ds :call vimspector#WriteSessionFile(".vim/debuggingsession.txt")<CR>
+nmap <leader>dl :call vimspector#ReadSessionFile(".vim/debuggingsession.txt")<CR>
+nmap gs :<C-u>VimspectorShowOutput Console<CR> i-exec step<CR><Esc>
