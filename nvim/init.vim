@@ -267,7 +267,7 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-map gw <C-w> 
+map gw <C-w>
 
 nnoremap <C-p> :GFiles<CR>
 

@@ -8,3 +8,5 @@ autocmd FileType java nmap <leader>dd :CocCommand java.debug.vimspector.start<CR
 nmap <leader>ds :call vimspector#WriteSessionFile(".vim/debuggingsession.txt")<CR>
 nmap <leader>dl :call vimspector#ReadSessionFile(".vim/debuggingsession.txt")<CR>
 nmap gs :<C-u>VimspectorShowOutput Console<CR> i-exec step<CR><Esc>
+nmap gn :<C-u>VimspectorShowOutput Console<CR> i-exec next<CR><Esc>
+nmap go :<C-u>VimspectorShowOutput Console<CR> i-exec finish<CR><Esc>
