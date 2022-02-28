@@ -14,6 +14,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', {'do': { -> fzf#install()}}
 Plug 'junegunn/fzf.vim'
+Plug 'dhruvasagar/vim-zoom'
 "Plug 'humiaozuzu/TabBar'
 "Plug 'majutsushi/tagbar'
 ""Plug 'mileszs/ack.vim'
