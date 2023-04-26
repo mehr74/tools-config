@@ -63,3 +63,9 @@ To set signing key for commit message use the following config
 ```
 git config --global commit.gpgsign true
 ```
+
+
+## Setup editor 
+```
+git config --global core.editor "vim"
+```
