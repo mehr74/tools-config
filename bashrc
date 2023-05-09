@@ -4,3 +4,7 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ tmux ]] && [
                 tmux new-session -s main
         fi
 fi
+
+
+socket=$(ls -1t /run/user/$UID/vscode-ipc-*.sock 2> /dev/null | head -1)
+export VSCODE_IPC_HOOK_CLI=${socket}
