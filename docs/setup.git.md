@@ -69,3 +69,17 @@ git config --global commit.gpgsign true
 ```
 git config --global core.editor "vim"
 ```
+
+After all gitconfig should look like this:
+```
+[user]
+        email = mehrshad@mehrshad.io
+        name = Mehrshad Lotfi Foroushani
+[init]
+        defaultBranch = main
+[core]
+        editor = nvim
+[commit]
+        template = /home/mehrshad/.git.commit.template
+        gpgsign = true
+```
