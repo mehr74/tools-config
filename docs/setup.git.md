@@ -65,6 +65,9 @@ Add the following line to `~/.zshrc` or `~/.bashrc` to set gpg key
 export GPG_TTY=$(tty)
 ```
 
+Note that the email address used for gpg key should be the same as the
+one used for git config (commiter email).
+
 
 ## Setup editor 
 ```
