@@ -60,10 +60,15 @@ To set signing key for commit message use the following config
 git config --global commit.gpgsign true
 ```
 
+Add the following line to `~/.zshrc` or `~/.bashrc` to set gpg key
+```bash
+export GPG_TTY=$(tty)
+```
+
 
 ## Setup editor 
 ```
-git config --global core.editor "vim"
+git config --global core.editor "code -w"
 ```
 
 After all gitconfig should look like this:
