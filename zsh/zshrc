@@ -9,9 +9,7 @@ source <(kubectl completion zsh)
 source <(helm completion zsh)
 
 # If we are not in a tmux then start a new one
-if [[ -z "$TMUX" ]] ; then
-  tmux attach -t default || tmux new -s default
-fi
+tmux attach -t default > /dev/null 2>&1 || tmux new -s default > /dev/null 2>&1
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
